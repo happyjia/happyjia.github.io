@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>学习过程中的CSS2笔记 | Happy Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="####清除浮动 在外层容器加上.clearfix 12345678.clearfix&amp;#123;	*zoom:1;&amp;#125;.clearfix:after&amp;#123;	content:&quot;&quot;;	display:block;	clear:both;&amp;#125;  ####双飞翼布局  双飞翼布局是从圣杯布局改进来的    都是侧边两栏宽度固定，中间宽度自适应。 不同之处是解决中间部分被挡住的问题时">
+<meta name="keywords" content="龚亚佳">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习过程中的CSS2笔记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;30&#x2F;%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84CSS2%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:site_name" content="Happy Study">
+<meta property="og:description" content="####清除浮动 在外层容器加上.clearfix 12345678.clearfix&amp;#123;	*zoom:1;&amp;#125;.clearfix:after&amp;#123;	content:&quot;&quot;;	display:block;	clear:both;&amp;#125;  ####双飞翼布局  双飞翼布局是从圣杯布局改进来的    都是侧边两栏宽度固定，中间宽度自适应。 不同之处是解决中间部分被挡住的问题时">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2019-10-16T07:32:00.469Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Happy Study" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Happy Study</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">This is GongYaJia&#39;s Study world</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-学习过程中的CSS2笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/30/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84CSS2%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2019-10-30T08:07:41.320Z" itemprop="datePublished">2019-10-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      学习过程中的CSS2笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>####清除浮动<br> 在外层容器加上.clearfix<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>&#123;</span><br><span class="line">	*zoom:1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">	<span class="attribute">display</span>:block;</span><br><span class="line">	<span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>####双飞翼布局</p>
+<ul>
+<li>双飞翼布局是从圣杯布局改进来的   </li>
+<li>都是侧边两栏宽度固定，中间宽度自适应。</li>
+<li>不同之处是解决中间部分被挡住的问题时，才去的解决方法不一样。<ul>
+<li>圣杯布局实在父元素上设置了padding-left和padding-right,再给左右两边的内容设置了position:relative;</li>
+<li>而双飞翼布局在center这个div中再加一个div，给这个新的div设置margin-left和margin-right</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>####BFC什么时候出现</p>
+<ul>
+<li>根元素</li>
+<li>float属性不为none</li>
+<li>position为absolute或fixed</li>
+<li>overflow不为visible</li>
+<li>display为tatble-cell,table-caption,flex,inline-flex</li>
+</ul>
+<p>####BFC布局规则</p>
+<ul>
+<li>内部的BOX会垂直放置，一个接一个地放置(块级元素占一行)</li>
+<li>BFC的区域不会与float box 重叠</li>
+<li>内部的BOX垂直方向的距离由margin决定。属于同一个BFC的两个相邻BOX的margin会发生重叠</li>
+<li>计算BFC的高度时，浮动元素也参与计算。(清除浮动  haslayout)</li>
+<li>BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。</li>
+</ul>
+<hr>
+<p>####清除浮动:让浮动的子元素库撑开父级的高度</p>
+<ol>
+<li>直接给父级加高度   (扩展性不好)</li>
+<li>通过开启BFC          </li>
+<li>br标签清除浮动    <br clear="all"/></li>
+<li>空标签清除浮动       <div style="clear:both;"></div></li>
+<li>伪元素<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*开启haslayout*/</span></span><br><span class="line"><span class="selector-class">.clearfix</span>&#123;</span><br><span class="line">	*zoom:1</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*ie6\7不支持伪元素*/</span></span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line"><span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line"><span class="attribute">display</span>:block;</span><br><span class="line"><span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/30/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84CSS2%E7%AC%94%E8%AE%B0/" data-id="ck2czz0um0000qsni7j4l07s0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/30/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84CSS2%E7%AC%94%E8%AE%B0/">学习过程中的CSS2笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 GongYaJia<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
