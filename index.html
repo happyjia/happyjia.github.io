@@ -162,14 +162,14 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-自定义域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/04/test/">test</a>
+      <a class="article-title" href="/2019/11/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/">自定义域名 </a>
     </h1>
   
 
@@ -177,15 +177,24 @@
         
         <!--显示阅读次数完毕-->
         
-        <a href="/2019/11/04/test/" class="archive-article-date">
-  	<time datetime="2019-11-04T13:59:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-04</time>
+        <a href="/2019/11/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/" class="archive-article-date">
+  	<time datetime="2019-11-16T16:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h4>
+        <h2 id="为托管到GitHub-page上的博客绑定自定义域名"><a href="#为托管到GitHub-page上的博客绑定自定义域名" class="headerlink" title="为托管到GitHub page上的博客绑定自定义域名"></a>为托管到GitHub page上的博客绑定自定义域名</h2><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><pre><code>用hexo部署的博客是将博客托管到github page上的，域名固定为XXX.github.io。由于域名过于呆板，我想先购买一个域名进行绑定。而且由于将代码托管到github，用github做服务器，有时候访问速度非常慢，计划过些日子买一个云服务器，先买了吧，还要备案，备案的时间再去把liunx回顾一下。</code></pre><h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><pre><code>直接在阿里云旗下的万网就可以购买域名了。`.com`有点贵啊，为什么服务器有学生优惠，域名没有。
+万网:&lt;https://wanwang.aliyun.com/&gt;</code></pre><h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><pre><code>购买域名之后需要实名认证之后才能解析域名</code></pre><h3 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h3><p>点击解析<br><img src="https://s2.ax1x.com/2019/11/17/MDpmT0.png" alt="MDpmT0.png"><br>点击添加记录<br><img src="https://s2.ax1x.com/2019/11/17/MDpc7t.png" alt="MDpc7t.png"><br>主机记录可理解为域名前缀，即用户输入什么样的网址访问到该解析目标。如果主机记录为www ，则用户需要输入www.[域名]才能访问到该解析目标。如果为@，则直接输入域名即可。<br><img src="https://s2.ax1x.com/2019/11/17/MDph9S.png" alt="MDph9S.png"></p>
+<p> 记录类型为解析目标的类型，如果想把该域名绑定到一个ip地址，则选A，如果目标为一个网址，则选CNAME。 </p>
+<p><a href="https://imgchr.com/i/MD9pu9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/11/17/MD9pu9.md.png" alt="MD9pu9.md.png"></a></p>
+<h3 id="绑定到github-pages"><a href="#绑定到github-pages" class="headerlink" title="绑定到github pages"></a>绑定到github pages</h3><p>登录到github，进入到绑定的仓库，进入设置</p>
+<p><img src="https://s2.ax1x.com/2019/11/17/MD9k4K.png" alt="MD9k4K.png"></p>
+<p>在下面找到github pages，在custom domain中填入刚刚购买的域名</p>
+<p><img src="https://s2.ax1x.com/2019/11/17/MD9Zge.png" alt="MD9Zge.png"></p>
+<p> 然后到本地博客<code>source</code>文件夹下新建文件CNAME，输入内容为自己的域名。 没有的话访问的时候回出现404，不晓得什么原因。<br> <img src="https://s2.ax1x.com/2019/11/17/MD9UDs.png" alt="MD9UDs.png"></p>
+
       
         
 
@@ -193,18 +202,13 @@
     </div>
     <div class="article-info article-info-index">
       
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
         		</li>
       		
 		</ul>
@@ -214,7 +218,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/04/test/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/11/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/">展开全文 >></a>
         </p>
       
 
@@ -423,10 +427,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随记</a>
-              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
