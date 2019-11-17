@@ -194,57 +194,9 @@
 <li>reboot                重启 </li>
 <li>sync                      内存数据同步到磁盘</li>
 </ul>
-<p>###添加用户<br>useradd   用户名<br>useradd     -g    用户组  用户名<br>madir  目录名<br>passwd  用户名</p>
-<p>###删除用户<br>####保留home目录<br>userdel  用户名<br>####不保留home目录<br>userdel -r 用户名<br>一般保留home目录</p>
-<p>##切换用户<br>su -用户名</p>
-<p>###用户组<br>####添加用户组<br>groupadd  用户组名</p>
-<p>####删除用户组</p>
-<p>groupdel  用户组名<br>####修改用户组<br>usermod -g 用户组 用户名</p>
-<p>###运行级别<br><img src="https://s2.ax1x.com/2019/10/24/KUATL4.png" alt="KUATL4.png"><br>常用运行级别是3和5，要修改默认的运行级别可以改文件/etc/inittab的id5：initdefault这一行中的数字</p>
-<p>##指令<br>###文件目录类指令</p>
-<ul>
-<li>pwd   显示当前工作绝对路径</li>
-<li>ls  -a  显示当前目录所有的文件和目录包括隐藏的</li>
-<li>ls -l    以列表的形式显示信息</li>
-</ul>
-<p>####cd切换目录</p>
-<ul>
-<li>cd ~   cd     回到自己的home目录</li>
-<li>cd.. 回到上一级目录<br>####创建与删除目录(make directory/remove directory)</li>
-<li>mkdir /home/dog</li>
-<li>mkdir  -p    /home/animal/dog</li>
-<li>rmdir  /dog      目录必须为空目录</li>
-<li>rm -rf  dog  删除非空目录<br>####创建与删除文件</li>
-<li>touch  文件名称       创建一个空文件</li>
-<li>- cp  [选项]   source  dest<br>-r   整个文件夹   复制文件</li>
-<li>rm  [选项]  要删除的文件或目录<br>-r  递归删除整个文件夹  recursive   递归<br>-f  强制删除不提示    force  强制</li>
-<li>mv   移动文件或重命名<ul>
-<li>mv oldNameFile   newNameFile   (功能描述  :重命名)</li>
-<li>mv  /temp/moviefile/targetFolder  (功能描述  :移动文件)<br>####查看文件<br>#####cat<br>cat  -n /etc/profile | more<br>cat只能浏览文件，而不能修改文件，为了浏览方便，一般会带上，管道命令     | more<br>#####more<br>more   /etc/profile<br>#####less<br>less用来分屏查看文件内容，比more更强大</li>
-</ul>
-</li>
-</ul>
-<p>####&gt;指令和&gt;&gt;指令<br>&gt; 输出重定向 :会将原来的文件内容覆盖<br>&gt; &gt; 追加:  不会覆盖原来文件的内容</p>
-<ul>
-<li>cat  文件1  &gt;  文件2   (文件1覆盖文件2)</li>
-<li>cat  文件1 &gt; &gt; 文件2  (文件1追加到文件2后面)</li>
-</ul>
-<h4 id="echo指令、head指令、tail指令"><a href="#echo指令、head指令、tail指令" class="headerlink" title="echo指令、head指令、tail指令"></a>echo指令、head指令、tail指令</h4><ul>
-<li>echo 输出内容到控制台<ul>
-<li>echo  $PATH</li>
-</ul>
-</li>
-<li>head  显示文件的开头部分的内容，默认10行<ul>
-<li>head - n 5 /etc/profile</li>
-</ul>
-</li>
-<li>tail 输出文件尾部的内容，默认10行<ul>
-<li>tail -n 5 /etc/profile</li>
-<li><strong>tail -f   /etc/profile   实时追踪该文档的所有更新</strong> </li>
-</ul>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2019/11/17/Linux%E7%AC%94%E8%AE%B0/#more">more >></a>
+        
       
         
 
@@ -322,16 +274,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="为托管到GitHub-page上的博客绑定自定义域名"><a href="#为托管到GitHub-page上的博客绑定自定义域名" class="headerlink" title="为托管到GitHub page上的博客绑定自定义域名"></a>为托管到GitHub page上的博客绑定自定义域名</h2><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><pre><code>用hexo部署的博客是将博客托管到github page上的，域名固定为XXX.github.io。由于域名过于呆板，我想先购买一个域名进行绑定。而且由于将代码托管到github，用github做服务器，有时候访问速度非常慢，计划过些日子买一个云服务器，先买了吧，还要备案，备案的时间再去把liunx回顾一下。</code></pre><h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><pre><code>直接在阿里云旗下的万网就可以购买域名了。`.com`有点贵啊，为什么服务器有学生优惠，域名没有。
-万网:&lt;https://wanwang.aliyun.com/&gt;</code></pre><h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><pre><code>购买域名之后需要实名认证之后才能解析域名</code></pre><h3 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h3><p>点击解析<br><img src="https://s2.ax1x.com/2019/11/17/MDpmT0.png" alt="MDpmT0.png"><br>点击添加记录<br><img src="https://s2.ax1x.com/2019/11/17/MDpc7t.png" alt="MDpc7t.png"><br>主机记录可理解为域名前缀，即用户输入什么样的网址访问到该解析目标。如果主机记录为www ，则用户需要输入www.[域名]才能访问到该解析目标。如果为@，则直接输入域名即可。<br><img src="https://s2.ax1x.com/2019/11/17/MDph9S.png" alt="MDph9S.png"></p>
-<p> 记录类型为解析目标的类型，如果想把该域名绑定到一个ip地址，则选A，如果目标为一个网址，则选CNAME。 </p>
-<p><a href="https://imgchr.com/i/MD9pu9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/11/17/MD9pu9.md.png" alt="MD9pu9.md.png"></a></p>
-<h3 id="绑定到github-pages"><a href="#绑定到github-pages" class="headerlink" title="绑定到github pages"></a>绑定到github pages</h3><p>登录到github，进入到绑定的仓库，进入设置</p>
-<p><img src="https://s2.ax1x.com/2019/11/17/MD9k4K.png" alt="MD9k4K.png"></p>
-<p>在下面找到github pages，在custom domain中填入刚刚购买的域名</p>
-<p><img src="https://s2.ax1x.com/2019/11/17/MD9Zge.png" alt="MD9Zge.png"></p>
-<p> 然后到本地博客<code>source</code>文件夹下新建文件CNAME，输入内容为自己的域名。 没有的话访问的时候回出现404，不晓得什么原因。<br> <img src="https://s2.ax1x.com/2019/11/17/MD9UDs.png" alt="MD9UDs.png"></p>
-
+        <h2 id="为托管到GitHub-page上的博客绑定自定义域名"><a href="#为托管到GitHub-page上的博客绑定自定义域名" class="headerlink" title="为托管到GitHub page上的博客绑定自定义域名"></a>为托管到GitHub page上的博客绑定自定义域名</h2><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><p>用hexo部署的博客是将博客托管到github page上的，域名固定为XXX.github.io。由于域名过于呆板，我想先购买一个域名进行绑定。<br>而且由于将代码托管到github，用github做服务器，有时候访问速度非常慢，计划过些日子买一个云服务器，先买了吧，还要备案，备案的时间再去把liunx回顾一下。</p>
+        
+          <a class="article-more-a" href="/2019/11/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/#more">more >></a>
+        
       
         
 
