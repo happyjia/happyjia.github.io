@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://happyjia.github.io/photos/index.html</loc>
+    
+    <lastmod>2019-11-26T16:21:50.190Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://happyjia.github.io/photos/data.json</loc>
+    
+    <lastmod>2019-11-26T16:13:45.548Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://happyjia.github.io/2019/11/17/%25E8%2587%25AA%25E5%25AE%259A%25E4%25B9%2589%25E5%259F%259F%25E5%2590%258D/</loc>
     
     <lastmod>2019-11-17T09:36:47.409Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://happyjia.github.io/2019/11/04/%25E5%25AD%25A6%25E4%25B9%25A0%25E8%25BF%2587%25E7%25A8%258B%25E4%25B8%25AD%25E7%259A%2584CSS2%25E7%25AC%2594%25E8%25AE%25B0/</loc>
     
     <lastmod>2019-11-05T08:39:21.471Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://happyjia.github.io/photos/index.html</loc>
-    
-    <lastmod>2018-11-26T21:11:36.000Z</lastmod>
     
   </url>
   
